@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fed776</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+    <color name="petrol_100">#00BAD1</color>
+    <color name="petrol_200">#008192</color>
+
+    <color name="bg_color">#F9F9F9</color>
+    <color name="color_white_semitransparent">#80ffffff</color>
+
+    <color name="grey_100">#F0F1F3</color>
+    <color name="grey_200">#CFCFCF</color>
+    <color name="grey_300">#A0A0A1</color>
+    <color name="grey_400">#606060</color>
+    <color name="grey_500">#ff4b4b4b</color>
+    <color name="grey_600">#424242</color>
+    <color name="grey_700">#ff3c3c3c</color>
+
+    <color name="pink">#FF4081</color>
+    <color name="indigo">#3F51B5</color>
+
+    <color name="blue_100">#00BCD4</color>
+    <color name="blue_200">#00A0B4</color>
+
+    <color name="violet_100">#3F51B5</color>
+    <color name="violet_200">#1A237E</color>
+    <color name="light_yellow">#FFDB4D</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent_black">#90000000</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FF7519</color>
+    <color name="light_orange">#ffa366</color>
+    <color name="dark_orange">#cc5200</color>
+    <color name="txt_font">#4e5572</color>
+    <color name="view_background">#e8ecfa</color>
+    <color name="btn_bg">#277bec</color>
+    <color name="green">#248F24</color>
+
+    <color name="red">#ef1010</color>
+    <color name="yellow">#f4d301</color>
+</resources>

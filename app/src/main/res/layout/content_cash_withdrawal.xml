@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mrcinback"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   >
+
+
+        <TextView
+            style="@style/whatsnew_Txt"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:paddingTop="28dp"
+            android:textColor="#E8E8E8" />
+
+        <TextView
+            android:id="@+id/mcr_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="38dp"
+            android:text=" "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:background="#00000000"  />
+
+        <TextView
+            style="@style/whatsnew_Txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=" "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="38dp"
+            android:id="@+id/mcrcarddata"
+            android:textColor="#FF0000"
+            android:background="#00000000" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

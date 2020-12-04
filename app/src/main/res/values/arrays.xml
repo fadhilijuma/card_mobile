@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="id_type">
+        <item>National ID</item>
+        <item>Passport</item>
+        <item>Driving License</item>
+        <item>Voters Card</item>
+    </string-array>
+</resources>

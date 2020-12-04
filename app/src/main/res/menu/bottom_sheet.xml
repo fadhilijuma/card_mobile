@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/camera" android:title="Camera" android:icon="@mipmap/camera"/>
+    <item android:id="@+id/gallery" android:title="Gallery" android:icon="@mipmap/gallery"/>
+
+</menu>

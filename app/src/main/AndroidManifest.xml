@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.lightspace.yetumobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".activity.model.RealmApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/mucoba"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.main.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.main.MainActivity" />
+        <activity
+            android:name=".activity.main.Fingerprint"
+            android:label="FINGERPRINT" />
+        <activity
+            android:name=".activity.main.BarCode"
+            android:label="QR CODE" />
+        <activity
+            android:name=".activity.newaccount.FaceIMage"
+            android:label="PICHA YA USO" />
+        <activity
+            android:name=".activity.newaccount.IDimage"
+            android:label="PICHA YA ID" />
+        <activity
+            android:name=".activity.newaccount.OpenAccountIndv"
+            android:label="HABARI YA MTEJA" />
+        <activity
+            android:name=".activity.newaccount.SendCustomerData"
+            android:label="TUMA HABARI" />
+        <activity
+            android:name=".activity.newaccount.UploadActivity"
+            android:label="TUMA HABARI" />
+        <activity
+            android:name=".activity.newaccount.NSignature"
+            android:label="SAHIHI" />
+        <activity
+            android:name=".activity.children.ChildData"
+            android:label="HABARI YA MTOTO" />
+        <activity
+            android:name=".activity.children.ChildFatherCombined"
+            android:label="PICHA YA WOTE" />
+        <activity
+            android:name=".activity.children.ChildFatherImage"
+            android:label="PICHA YA MZAZI" />
+        <activity
+            android:name=".activity.children.ChildID"
+            android:label="PICHA YA ID" />
+        <activity
+            android:name=".activity.children.ChildImage"
+            android:label="PICHA YA MTOTO" />
+        <activity
+            android:name=".activity.children.UploadChild"
+            android:label="TUMA HABARI" />
+        <activity
+            android:name=".activity.children.CSignature"
+            android:label="SAHIHI" />
+        <activity
+            android:name=".activity.existing.ExistingCustomerBio"
+            android:label="HABARI YA MTEJA" />
+        <activity
+            android:name=".activity.existing.ExistingFaceImage"
+            android:label="PICHA YA USO" />
+        <activity
+            android:name=".activity.existing.ExistingIDImage"
+            android:label="PICHA YA ID" />
+        <activity
+            android:name=".activity.existing.UploadExisting"
+            android:label="TUMA HABARI" />
+        <activity
+            android:name=".activity.existing.Signature"
+            android:label="SAHIHI" />
+        <activity
+            android:name=".activity.transactions.CashDeposit"
+            android:label="KUWEKA PESA" />
+        <activity
+            android:name=".activity.main.MobileRegistration"
+            android:label="KUTOA NA FT" />
+
+        <receiver
+            android:name=".activity.network.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.transactions.BalanceInquiry"
+            android:label="SALIO" />
+        <activity
+            android:name=".activity.main.ChangePass"
+            android:label="BADILISHA PASSWORD" />
+        <activity
+            android:name=".activity.main.AccountType"
+            android:label="KUFUNGUA AKAUNTI" />
+        <activity
+            android:name=".activity.transactions.CashWithdrawal"
+            android:label="KUTOA HELA"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.existing.AccountConnect"
+            android:label="KUFUNGUA AKAUNTI"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.TransConnect"
+            android:label="MIAMALA"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.Reports"
+            android:label="RIPOTI"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.CardActivation"
+            android:label="RIPOTI"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.ATMCardConnect"
+            android:label="ATM KADI"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.PinChange"
+            android:label="NENO SIRI"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.transactions.PinReset"
+            android:label="NENO SIRI"
+            android:theme="@style/AppTheme" />
+
+        <!-- SMS Receiver -->
+        <receiver
+            android:name=".activity.main.SMS_Receiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service -->
+        <service
+            android:name=".activity.main.PRINTER_Service"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

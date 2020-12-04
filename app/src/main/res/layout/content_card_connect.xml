@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/toolbar" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/category_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/btnTransfers"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_shadow"
+                        android:clickable="true"
+                        android:onClick="CardActivation"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="ATM CHAPCHAP"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/gradient"
+                            android:gravity="center" />
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="atm chapchap"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/existing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btnExisting"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_shadow"
+                        android:clickable="true"
+                        android:onClick="PinChange"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="KUBADILISHA NENO SIRI"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/gradient"
+                            android:gravity="center" />
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="kubadilisha neno siri"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pinreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btnPinReset"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_shadow"
+                        android:clickable="true"
+                        android:onClick="PinReset"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="KUSAHAU NENOSIRI"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/gradient"
+                            android:gravity="center" />
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="kusahau nenosiri"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/changeUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btnChangeUsername"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_shadow"
+                        android:clickable="true"
+                        android:onClick="UpdateUsername"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Headline"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="KUBADILI USERNAME YA POS"
+                            android:textSize="17sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/gradient"
+                            android:gravity="center" />
+
+                        <TextView
+                            style="@style/Base.TextAppearance.AppCompat.Body1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="kubadili Username ya POS"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
